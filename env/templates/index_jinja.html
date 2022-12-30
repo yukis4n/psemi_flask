@@ -1,0 +1,19 @@
+
+<body>
+    <p>{{str}}</p>
+    <hr>
+    <ul>
+        {% for x in list %}
+        <li>{{x}}</li>
+            {% endfor %}
+    </ul>
+    <hr>
+    <p>{{"name: %s age: %s" % (dictionary["name"],dictionary["age"]) }}</p>
+    <hr>
+    {%if flag%}
+    <p>True</p>
+    {% else %}
+    <p>False</p>
+    {% endif %}
+    <a href="/">Back to index.html</a>
+</body>
